@@ -4,7 +4,6 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Myimage from "../Assets/my_image.jpg";
 import { motion } from "framer-motion";
-import { BackCircle } from "../Components";
 
 const Hero = () => {
   const [text, count] = useTypewriter({
@@ -14,7 +13,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="max-w-7xl mx-auto p-9 relative select-none">
+    <div className="max-w-7xl mx-auto p-9 relative select-none overflow-x-hidden">
       <motion.h1
         initial={{
           x: 500,
@@ -71,11 +70,9 @@ const Hero = () => {
         className="flex justify-center items-center  flex-col  mt-10 lg:mt-10"
       >
         <div className=" justify-center items-center absolute">
-          <div className="w-[180px] h-[270px] sm:w-[200px] border-2 rounded-[50%] border-[#ffd89dd7] animate-ping top-0"></div>
+          <div className="w-[150px] h-[200px] sm:w-[200px] border-2 rounded-[50%] border-[#ffd89dd7] animate-ping top-0"></div>
         </div>
-        <div className=" justify-center items-center absolute">
-          <div className="w-[300px] h-[350px] sm:w-[200px] border-2 rounded-[50%] border-[#ffd89da2] animate-pulse opacity-50 top-0"></div>
-        </div>
+
         <Image
           src={Myimage}
           alt="MyImage"
@@ -86,27 +83,14 @@ const Hero = () => {
         </p>
       </motion.div>
 
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
-        className="w-64 h-28 mt-10  right-10 mr-5 lg:right-0 lg:mt-[-5rem] "
-      >
+      <div className="w-64 h-28 mt-10  right-10 mr-5 lg:right-0 lg:mt-[-5rem] ">
         <Link href="#about" className="button  right-24">
           About
         </Link>
         <Link href="#experience" className="button  right-5 bottom-5">
           Contact
         </Link>
-      </motion.div>
+      </div>
     </div>
   );
 };
