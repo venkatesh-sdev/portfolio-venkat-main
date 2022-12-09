@@ -71,13 +71,7 @@ const Hero = () => {
         className="flex justify-center items-center  flex-col  mt-10 lg:mt-10"
       >
         <div className=" justify-center items-center absolute">
-          <div className="w-[200px] h-[270px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
-        </div>
-        <div className=" justify-center items-center absolute">
-          <div className="w-[220px] h-[280px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
-        </div>
-        <div className=" justify-center items-center absolute">
-          <div className="w-[240px] h-[280px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
+          <div className="w-[150px] h-[270px] sm:w-[200px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
         </div>
         <Image
           src={Myimage}
