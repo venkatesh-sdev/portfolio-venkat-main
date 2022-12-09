@@ -9,7 +9,7 @@ const Header = () => {
 
   const [iconColor, setIconColor] = useState("#f162ff");
   return (
-    <header className="bg-skin-fill shadow-sm shadow-slate-500/50 flex justify-between p-4 max-w-7xl mx-auto sticky top-0 z-50">
+    <div className="bg-skin-fill shadow-sm shadow-slate-500/50 flex justify-between p-4 max-w-7xl mx-auto sticky top-0 z-50">
       <SocialLinks/>
       <motion.div 
       initial={{
@@ -37,7 +37,7 @@ const Header = () => {
           Hit to contact me
         </p>
       </motion.div>
-    </header>
+    </div>
   );
 };
 

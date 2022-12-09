@@ -39,7 +39,7 @@ const SocialLinks = () => {
           className="cursor-pointer rounded-md"
         />
         <SocialIcon
-          url="https://github.com/"
+          url="https://github.com/venkatesh-sdev"
           fgColor={`${iconColor}`}
           bgColor="transparent"
           className="cursor-pointer rounded-md"

@@ -13,7 +13,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="max-w-7xl mx-auto p-5 relative select-none">
+    <div className="max-w-7xl mx-auto p-9 relative select-none">
       <motion.h1
         initial={{
           x: 500,
@@ -87,12 +87,12 @@ const Hero = () => {
         transition={{
           duration: 1.5,
         }}
-        className="w-64 h-28 mt-10 absolute right-5 mr-5 lg:right-0 lg:mt-[-5rem] "
+        className="w-64 h-28 mt-10  right-10 mr-5 lg:right-0 lg:mt-[-5rem] "
       >
-        <Link href="#about" className="button">
+        <Link href="#about" className="button  right-24">
           About
         </Link>
-        <Link href="#experience" className="button absolute right-0 bottom-0">
+        <Link href="#experience" className="button  right-5 bottom-5">
           Contact
         </Link>
       </motion.div>

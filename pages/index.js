@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { Header , Hero} from "../Container";
+import { Header, Hero } from "../Container";
 
 const index = () => {
   return (
@@ -9,14 +9,15 @@ const index = () => {
         <title>Venkat-Portfolio</title>
       </Head>
 
-      <Header />
+      <header id="#header" className="bg-skin-fill">
+        <Header />
+      </header>
 
       <main>
-        <section id='#hero'>
-            <Hero/>
+        <section id="#hero" className="bg-skin-fill">
+          <Hero />
         </section>
       </main>
-
     </React.Fragment>
   );
 };

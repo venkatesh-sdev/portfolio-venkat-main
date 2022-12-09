@@ -5,9 +5,7 @@
 
 /* d902ee, #ffd79d, #f162ff, #320d3e */
 
-body{
-    background: #320d3e;
-}
+
 @layer base{
     :root{
         --hover-color:#f162ff;
