@@ -4,6 +4,9 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Myimage from "../Assets/my_image.jpg";
 import { motion } from "framer-motion";
+import { BackCircle } from "../Components";
+
+
 
 const Hero = () => {
   const [text, count] = useTypewriter({
@@ -69,6 +72,7 @@ const Hero = () => {
         }}
         className="flex justify-center items-center  flex-col  mt-10 lg:mt-10"
       >
+        <BackCircle/>
         <Image src={Myimage} alt="MyImage" className="w-80 rounded-[50%]" />
         <p className="tracking-[5px] font-semibold text-skin-bodyText uppercase text-center">
           developer
