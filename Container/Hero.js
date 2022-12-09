@@ -73,6 +73,8 @@ const Hero = () => {
         className="flex justify-center items-center  flex-col  mt-10 lg:mt-10"
       >
         <BackCircle/>
+        <BackCircle/>
+        <BackCircle/>
         <Image src={Myimage} alt="MyImage" className="w-80 z-20 rounded-[50%]" />
         <p className="tracking-[5px] font-semibold text-skin-bodyText uppercase text-center">
           developer
