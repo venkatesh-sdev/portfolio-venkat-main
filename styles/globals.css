@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* d902ee, #ffd79d, #f162ff, #320d3e */
+
+body{
+    background: #320d3e;
+}
+@layer base{
+    :root{
+        --hover-color:#f162ff;
+        --body-bg-color:#320d3e;
+        --button-bg-color:#d902ee;
+        --button-text-color:#320d3e;
+        --body-text-color:#ffd79d;
+        --icons-color:#ffd79d;
+    }
+}
+
+@layer components {
+    .button{
+        @apply py-2 px-8 text-skin-buttonText bg-skin-button-bg inline-block absolute font-semibold text-lg rounded-md hover:bg-skin-hover-bg transition-all duration-75 ease-linear;
+    }
+}
