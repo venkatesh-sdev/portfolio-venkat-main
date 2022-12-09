@@ -5,6 +5,10 @@
 
 /* d902ee, #ffd79d, #f162ff, #320d3e */
 
+body{
+    overflow: hidden;
+}
+
 
 @layer base{
     :root{
