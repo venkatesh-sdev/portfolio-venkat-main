@@ -6,8 +6,6 @@ import Myimage from "../Assets/my_image.jpg";
 import { motion } from "framer-motion";
 import { BackCircle } from "../Components";
 
-
-
 const Hero = () => {
   const [text, count] = useTypewriter({
     words: ["Hi I'm Venkat", "I'm Developer", "I'm Designer"],
@@ -72,10 +70,20 @@ const Hero = () => {
         }}
         className="flex justify-center items-center  flex-col  mt-10 lg:mt-10"
       >
-        <BackCircle/>
-        <BackCircle/>
-        <BackCircle/>
-        <Image src={Myimage} alt="MyImage" className="w-80 z-20 rounded-[50%]" />
+        <div className=" justify-center items-center absolute">
+          <div className="w-[200px] h-[290px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
+        </div>
+        <div className=" justify-center items-center absolute">
+          <div className="w-[220px] h-[290px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
+        </div>
+        <div className=" justify-center items-center absolute">
+          <div className="w-[240px] h-[290px] border-2 rounded-[50%] border-[#ffd89d93] animate-ping top-0"></div>
+        </div>
+        <Image
+          src={Myimage}
+          alt="MyImage"
+          className="w-80 z-20 rounded-[50%]"
+        />
         <p className="tracking-[5px] font-semibold text-skin-bodyText uppercase text-center">
           developer
         </p>
